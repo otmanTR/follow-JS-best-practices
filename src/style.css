@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+}
+
+body {
+  overflow: hidden;
+  background-color: #f6f6f6;
+  font-family: 'Open Sans', 'Lucida Grande', tahoma, verdana, arial, sans-serif;
+  background-image: url(../ToDoList.jpg);
+  background-size: cover;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.delete {
+  display: none;
+}
+
+.active {
+  display: inline;
+}
+
+.tasks {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 30px 0;
+}
+
+.title {
+  padding: 10px;
+}
+
+.title i {
+  color: #c1bfbf;
+}
+
+.tasks section {
+  background-color: #fff;
+  width: 70%;
+  padding: 10px;
+  padding-bottom: 0;
+  border-radius: 3px;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 15%);
+}
+
+.add-tasks {
+  width: 100%;
+}
+
+.form {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.add-task input {
+  padding: 0 40px 0 1rem;
+  line-height: 50px;
+  border: none;
+  font-style: italic;
+  width: 95%;
+  height: 50px;
+}
+
+.add-task input::placeholder {
+  font-size: 15px;
+  color: #c1bfbf;
+}
+
+.form i {
+  font-size: 10px;
+  color: #c1bfbf;
+}
+
+.task-list li {
+  position: relative;
+  background-color: #fff;
+  padding: 0 49px 0 1em;
+  font-size: 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  font-weight: 300;
+  height: 50px;
+  letter-spacing: 1px;
+}
+
+.task-list li .label {
+  line-height: 20px;
+  word-wrap: break-word;
+  padding: 0 100px;
+}
+
+.task-list li i {
+  opacity: 0.2;
+  float: right;
+  margin-right: -3em;
+  padding: 0 0.5rem;
+  line-height: 0;
+  cursor: pointer;
+}
+
+.clear-all {
+  margin-top: 30px;
+  margin-bottom: 0;
+  padding: 10px;
+  border: none;
+  margin-right: -10px;
+  margin-left: -10px;
+  width: 103.5%;
+  font-size: 17px;
+}
+
+.delete-all {
+  cursor: pointer;
+}
+
+.clear-all:hover {
+  text-decoration: underline;
+}
